@@ -123,7 +123,7 @@ const NavMenu = () => {
   }, []);
 
   return (
-    <Navbar className="max-w-full p-0 mt-3">
+    <Navbar className="max-w-full p-0">
       <div className="flex items-center justify-between text-blue-gray-900">
         <div className="hidden lg:block">
           <NavList />
@@ -154,39 +154,37 @@ export const Header = () => {
 
   return (
     <header>
-      <div className="flex">
-        <div className="flex-grow logo-container">
+      <div className="flex justify-between items-center w-full">
+        <div className="logo-container">
           <Image src={Logo} alt="logo" layout="responsive" />
         </div>
-        <div className="flex-grow ">
-          <nav>
-            <ul className="flex space-x-4">
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  {t("home")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  {t("aboutUs")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  {t("services")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  {t("contact")}
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav className="hidden md:block">
+          <ul className="flex space-x-5">
+            <li>
+              <a href="#" className="text-gray-600 hover:text-black font-bold">
+                {t("home")}
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-gray-600 hover:text-black font-bold">
+                {t("aboutUs")}
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-gray-600 hover:text-black font-bold">
+                {t("services")}
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-gray-600 hover:text-black font-bold">
+                {t("contact")}
+              </a>
+            </li>
+          </ul>
+        </nav>
         <div>
           <ReactFlagsSelect
-            className="flex-grow justify-items-end"
+            className="justify-self-end"
             countries={["IT", "DE", "GB"]}
             customLabels={{ GB: "english", DE: "deutsche", IT: "italiano" }}
             selected={selected}
@@ -197,10 +195,7 @@ export const Header = () => {
           />
         </div>
       </div>
-
-      <div>
-        <NavMenu></NavMenu>
-      </div>
+      <NavMenu></NavMenu>
     </header>
   );
 };

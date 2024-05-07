@@ -17,7 +17,7 @@ exports.modules = {
   \**************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"menu":{"luxury":"Luxury","new":"Nuovi arrivi","sale":"Saldi","lenses":"Lenti a contatto","who":"Chi siamo","contact":"Contattaci","sunglasses":{"label":"Occhiali da sole","man":"Uomo","woman":"Donna","boy":"Bambino","girl":"Bambina","most_sold":"I più venduti","polarized":"Polarizzati","shape":"Forme","style":"Stile"},"glasses":{"label":"Occhiali da vista","man":"Uomo","woman":"Donna","most_sold":"I più venduti","shape":"Forme","style":"Stile"},"brand":{"label":"Per brand"},"links":{"home":"Home","aboutUs":"Chi Siamo","services":"Servizi","contact":"Contatti"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"menu":{"luxury":"Luxury","new":"Nuovi arrivi","sale":"Saldi","lenses":"Lenti a contatto","who":"Chi siamo","contact":"Contattaci","sunglasses":{"label":"Occhiali da sole","man":"Uomo","woman":"Donna","boy":"Bambino","girl":"Bambina","most_sold":"I più venduti","polarized":"Polarizzati","shape":"Forme","style":"Stile"},"glasses":{"label":"Occhiali da vista","man":"Uomo","woman":"Donna","most_sold":"I più venduti","shape":"Forme","style":"Stile"},"brand":{"label":"Per brand"},"links":{"home":"Home","aboutUs":"Chi siamo","services":"Servizi","contact":"Contatti"}}}');
 
 /***/ })
 
