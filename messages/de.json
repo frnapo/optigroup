@@ -27,6 +27,12 @@
     },
     "brand": {
       "label": "Nach Marke"
+    },
+    "links": {
+      "home": "Startseite",
+      "aboutUs": "Über Uns",
+      "services": "Dienstleistungen",
+      "contact": "Kontakt"
     }
   }
 }

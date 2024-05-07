@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .logo-container {
   height: 60px;
   max-width: 200px;
@@ -14,6 +20,21 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+.product-image {
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.product-image:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 /*.payment {*/
 /*    height: 25px;*/
 /*    width: 100%;*/

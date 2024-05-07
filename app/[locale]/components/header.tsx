@@ -145,11 +145,12 @@ const NavMenu = () => {
 
 export const Header = () => {
   const locale = useLocale();
-
+  const t = useTranslations("menu.links");
   const [selected, setSelected] = useState(locale.replace("en", "gb").toUpperCase());
   const router = useRouter();
 
   // aggiunto il logo con un effetto all'hover definito in global.css con classe logo-container
+  // aggiunto oggetto links nei json per le traduzioni
 
   return (
     <header>
@@ -157,7 +158,32 @@ export const Header = () => {
         <div className="flex-grow logo-container">
           <Image src={Logo} alt="logo" layout="responsive" />
         </div>
-        <div className="flex-grow">some links</div>
+        <div className="flex-grow ">
+          <nav>
+            <ul className="flex space-x-4">
+              <li>
+                <a href="#" className="text-gray-600 hover:text-gray-900">
+                  {t("home")}
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-600 hover:text-gray-900">
+                  {t("aboutUs")}
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-600 hover:text-gray-900">
+                  {t("services")}
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-600 hover:text-gray-900">
+                  {t("contact")}
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div>
           <ReactFlagsSelect
             className="flex-grow justify-items-end"
