@@ -28,12 +28,12 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Politiche di Reso
+                  Modalità di pagamento
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 hover:text-gray-900">
-                  FAQ
+                  Tempi e costi di spedizione
                 </a>
               </li>
             </ul>
@@ -43,7 +43,12 @@ export default function Footer() {
             <ul className="md:mb-5 lg:mb-0">
               <li>
                 <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Occhiali da sole
+                  Luxury
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-600 hover:text-gray-900">
+                  Nuovi arrivi
                 </a>
               </li>
               <li>
@@ -53,12 +58,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Luxury
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Nuovi arrivi
+                  Occhiali da sole
                 </a>
               </li>
             </ul>
@@ -73,17 +73,17 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Politiche di ritorno
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-600 hover:text-gray-900">
                   Garanzia
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 hover:text-gray-900">
-                  Mappa del sito
+                  Politiche di ritorno
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-600 hover:text-gray-900">
+                  Politiche di Reso
                 </a>
               </li>
             </ul>

@@ -7,13 +7,15 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 export default function ProductsCarousel() {
   const products = Settings.getInstance().products;
   const [activeIndex, setActiveIndex] = useState(0);
-  const [productsPerSlide, setProductsPerSlide] = useState(4);
+  const [productsPerSlide, setProductsPerSlide] = useState(2);
   const [translateX, setTranslateX] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1024) {
         setProductsPerSlide(4);
+      } else if (window.innerWidth >= 768) {
+        setProductsPerSlide(3);
       } else {
         setProductsPerSlide(2);
       }
