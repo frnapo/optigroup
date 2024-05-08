@@ -27,6 +27,12 @@
     },
     "brand": {
       "label": "By Brand"
+    },
+    "links": {
+      "home": "Home",
+      "aboutUs": "About us",
+      "services": "Services",
+      "contact": "Contact"
     }
   }
 }

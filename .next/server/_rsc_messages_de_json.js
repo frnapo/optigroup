@@ -17,7 +17,7 @@ exports.modules = {
   \**************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"menu":{"luxury":"Luxus","new":"Neuheiten","sale":"Verkauf","lenses":"Kontaktlinsen","who":"Über uns","contact":"Kontaktiere uns","sunglasses":{"label":"Sonnenbrillen","man":"Männer","woman":"Frauen","boy":"Jungen","girl":"Mädchen","most_sold":"Bestseller","polarized":"Polarisiert","shape":"Formen","style":"Stil"},"glasses":{"label":"Brillen","man":"Männer","woman":"Frauen","most_sold":"Bestseller","shape":"Formen","style":"Stil"},"brand":{"label":"Nach Marke"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"menu":{"luxury":"Luxus","new":"Neuheiten","sale":"Verkauf","lenses":"Kontaktlinsen","who":"Über uns","contact":"Kontaktiere uns","sunglasses":{"label":"Sonnenbrillen","man":"Männer","woman":"Frauen","boy":"Jungen","girl":"Mädchen","most_sold":"Bestseller","polarized":"Polarisiert","shape":"Formen","style":"Stil"},"glasses":{"label":"Brillen","man":"Männer","woman":"Frauen","most_sold":"Bestseller","shape":"Formen","style":"Stil"},"brand":{"label":"Nach Marke"},"links":{"home":"Startseite","aboutUs":"Über uns","services":"Dienstleistungen","contact":"Kontakt"}}}');
 
 /***/ })
 

@@ -1,22 +1,15 @@
 "use client";
-import {Settings} from "@/app/[locale]/providers/settings";
-import Image from "next/image";
+import ProductsCarousel from "./components/ProductsCarousel";
+
+//aggiunto carosello su componente a parte per mantenere il codice ben separato e piu' pulito
 
 export default function Home() {
-    return (
-        <>
-            <div>show a carousel</div>
-
-            {
-                Settings.getInstance().products.map((product, index) => {
-                    return (
-                        <div key={index}>
-                            <Image src={require(`./assets/products/${product.href}`)} alt={product.title} width={100}
-                                   height={100}></Image>
-                        </div>
-                    )
-                })
-            }
-        </>
-    );
+  return (
+    <>
+      <div className="my-4">
+        <h3 className="text-center font-bold text-lg">ULTIMI ARRIVI</h3>
+        <ProductsCarousel />
+      </div>
+    </>
+  );
 }
