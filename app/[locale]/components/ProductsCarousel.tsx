@@ -28,20 +28,20 @@ export default function ProductsCarousel() {
     setTranslateX(-activeIndex * (100 / productsPerSlide));
   }, [activeIndex, productsPerSlide]);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [activeIndex, productsPerSlide, products.length]);
+
   const nextSlide = () => {
-    if (activeIndex < products.length - productsPerSlide) {
-      setActiveIndex((current) => current + 1);
-    }
+    setActiveIndex((current) => (current < products.length - productsPerSlide ? current + 1 : 0));
   };
 
   const prevSlide = () => {
-    if (activeIndex > 0) {
-      setActiveIndex((current) => current - 1);
-    }
-  };
-
-  const handleSliderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setActiveIndex(Number(event.target.value));
+    setActiveIndex((current) => (current > 0 ? current - 1 : products.length - productsPerSlide));
   };
 
   return (
@@ -70,6 +70,14 @@ export default function ProductsCarousel() {
                   unselectable="on"
                   onDragStart={(e) => e.preventDefault()}
                 />
+                <div className="mt-2 flex justify-center items-center px-2">
+                  <button className="border border-gray-300 text-gray-600 hover:bg-gray-300 hover:text-gray-700 py-1 px-3 rounded-0 transition-all z-10">
+                    Dettagli
+                  </button>
+                  <button className="bg-gray-900 text-white py-1 px-3 rounded-0 hover:bg-gray-700 transition-all z-10">
+                    Acquista
+                  </button>
+                </div>
               </div>
             ))}
           </div>
@@ -80,16 +88,6 @@ export default function ProductsCarousel() {
         >
           <ChevronRightIcon className="h-6 w-6 text-gray-800" />
         </div>
-      </div>
-      <div className="flex justify-center mt-4">
-        <input
-          type="range"
-          min="0"
-          max={products.length - productsPerSlide}
-          value={activeIndex}
-          onChange={handleSliderChange}
-          className="w-full"
-        />
       </div>
     </div>
   );

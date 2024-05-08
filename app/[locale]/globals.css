@@ -35,7 +35,6 @@ footer {
   bottom: 0;
   width: 100%;
 }
-/*.payment {*/
-/*    height: 25px;*/
-/*    width: 100%;*/
-/*}*/
+.payment {
+  width: 35px;
+}

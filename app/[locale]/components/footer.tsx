@@ -1,10 +1,16 @@
 "use client";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import PayPal from "../assets/payments/paypal.png";
+import Visa from "../assets/payments/visa.png";
+import Mastercard from "../assets/payments/mastercard.png";
+import Klarna from "../assets/payments/klarna.png";
+import Image from "next/image";
+
 // creazione footer con qualche piccolo effetto all'hover e gestione della responsive
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 rounded-t-xl text-center text-gray-600 py-4 shadow-xl">
+    <footer className="bg-gray-50 rounded-t-xl text-center text-gray-600 py-4 shadow-xl">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-4">
           <div>
@@ -86,10 +92,18 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-1">Pagamenti sicuri</h3>
             <p>Visa, Paypal, Mastercard, Poste-Pay, AmazonPay, Scalapay, Klarna o alla consegna.</p>
             <div className="flex justify-center space-x-4 mt-2">
-              {/* <FaCcVisa className="text-xl" />
-            <FaCcMastercard className="text-xl" />
-            <FaCcPaypal className="text-xl" />
-            <FaCcAmazonPay className="text-xl" /> */}
+              <div className="payment">
+                <Image src={PayPal} alt="PayPal" layout="responsive" />
+              </div>
+              <div className="payment">
+                <Image src={Visa} alt="Visa" layout="responsive" />
+              </div>
+              <div className="payment">
+                <Image src={Mastercard} alt="Mastercard" layout="responsive" />
+              </div>
+              <div className="payment">
+                <Image src={Klarna} alt="Klarna" layout="responsive" />
+              </div>
             </div>
           </div>
         </div>
